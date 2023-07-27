@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 003</title>
+    <style>
+        body {
+            background-color: rgb(113, 127, 249); /*CSS comment*/
+            color: azure;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1> <!--HTML comment-->
+    <p>já me livrei da maldição...</p>
+
+    <script>
+        //Data types in JS
+
+        // NUMBER (Infinity, NaN...) 
+        // STRING ('Matheus',"Matheus", ) 
+        // BOOLEAN (true, false)
+        // NULL
+        // UNDEFINED
+        // OBJECT (Array...)
+        // FUNCTION
+
+        //parseInteger
+        var n1 = Number.parseFloat(window.prompt("Digite o primeiro número:")); //String to Int
+        var n2 = Number.parseFloat(window.prompt("Digite o segundo número")); //String to Int
+        /*
+        Another way using just 'Number'
+        var n1 = Number(window.prompt("Digite o primeiro número:")); //String to Int
+        var n2 = Number(window.prompt("Digite o segundo número")); //String to Int
+        */
+        var soma = n1 + n2;
+
+        window.alert(`a soma entre os números ${n1} e ${n2} é: ${soma}`); //placeholder ${}
+
+        //toString
+        var n = 2;
+        toString(n); //forma1
+        String(n); //forma2 (mais recente)
+
+        //You can use the placeholder for concat strings: ${variable identifier}
+
+    </script>
+</body>
+</html>

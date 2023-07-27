@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First steps with DOM</title>
+    <style>
+        body {
+            background-color: rgb(55, 146, 188);
+            font: normal 18pt Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body onload="window.alert('Welcome to my homepage!')">
+    <h1>Iniciando estudos com DOM</h1>
+    <P>aqui vai o resultado</P>
+    <p>aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div class="msg">clique em mim</div>
+
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var m = window.document.getElementById('msg')
+        // window.document.write(m.innerText)
+        // m.style.background = 'green'
+        // // corpo.style.background = 'black'
+        // window.document.write('está escrito assim: ' + p1.innerText)
+        // p1.style.color = 'blue'
+        // window.document.getElementsByName('msg')[0].innerText = 'MODIFICADO'
+        // window.document.getElementsByClassName('msg')[0].innerText = 'MODIFIED'
+        //SELECIONANDO ELEMENT POR MEIO DE QUERY SELECTOR
+        var q = window.document.querySelector('div.msg')
+        q.style.color = 'pink'
+    </script>
+</body>
+</html>

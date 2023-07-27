@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 30pt;
+        }
+
+        strong {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Inform your name:');
+        var salario = Number(prompt('Inform your salary:'));
+        var salToDolar = salario * 4;
+        var salToEuro = salario * 5;
+        document.write(`Olá, <strong>${nome}</strong>! seu nome tem <strong>${nome.length}</strong> letras <br/>`); //<br> brakrow
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong><br/>`);
+        document.write(`Seu nome em minúsculas é <strong>${nome.toLowerCase()}</strong><br/>`);
+        //document.write(`seu sálário atual é: ${salario.toFixed(2)}`)
+        document.write(`Seu sálário atual é: <strong>${salario.
+                                                toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong><br/>`);
+        document.write(`Seu salário em Dólar corresponde à <strong>${salToDolar.
+                                                toLocaleString('pt-br',{style: 'currency',currency: 'USD'})}</strong><br/>`)
+        document.write(`Seu salário em Euro corresponde à <strong>${salToEuro.
+                                                toLocaleString('pt-br',{style: 'currency', currency: 'EUR'})}</strong>`)
+    </script>
+
+</body>
+</html>
